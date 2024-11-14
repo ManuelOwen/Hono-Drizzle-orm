@@ -1,0 +1,37 @@
+{
+  "name": "recap-driz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/index.js",
+    "dev": "tsx watch ./src/index.ts",
+    "build": "tsc",
+    "gen": "drizzle-kit generate",
+  
+    "studio": "drizzle-kit studio",
+    "push": "drizzle-kit generate && tsx src/drizzle/migrate.ts",
+    "seed": "tsx src/drizzle/seed.ts"
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hono/node-server": "^1.11.4",
+    "@neondatabase/serverless": "^0.9.3",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.0",
+    "hono": "^4.4.8",
+    "pg": "^8.11.5",
+    "seed": "^0.4.4",
+    "tsx": "^4.11.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "drizzle-kit": "^0.22.7",
+    "typescript": "^5.4.5"
+  }
+}

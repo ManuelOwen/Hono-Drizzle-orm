@@ -1,0 +1,49 @@
+{
+  "id": "60865e47-c5eb-4443-93b1-ac96797b7878",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.BookTable": {
+      "name": "BookTable",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "Author": {
+          "name": "Author",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "Tttle": {
+          "name": "Tttle",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "year_published": {
+          "name": "year_published",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
